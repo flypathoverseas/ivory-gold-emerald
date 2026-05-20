@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { ArrowUpRight, Briefcase, GraduationCap, Plane } from "lucide-react";
 import work from "@/assets/work-visa.jpg";
 import student from "@/assets/student-visa.jpg";
@@ -10,10 +10,9 @@ type Item = {
   label: string;
   title: string;
   desc: string;
-  image: string;
   Icon: typeof Briefcase;
   highlight?: boolean;
-  videoSrc?: string;
+  image: string;
 };
 
 const items: Item[] = [
@@ -22,25 +21,25 @@ const items: Item[] = [
     label: "Education",
     title: "Student Visa",
     desc: "World-class universities across UK, Canada, Australia & Germany.",
-    image: student,
     Icon: GraduationCap,
+    image: student,
   },
   {
     to: "/work-visa",
     label: "Career Abroad — Flagship",
     title: "Work Visa",
     desc: "Skilled & PR pathways into Canada, UK, UAE, Germany and beyond.",
-    image: work,
     Icon: Briefcase,
     highlight: true,
+    image: work,
   },
   {
     to: "/tourist-visa",
     label: "Travel",
     title: "Tourist Visa",
     desc: "Schengen, US, UK and family travel — fast-tracked & concierge handled.",
-    image: tourist,
     Icon: Plane,
+    image: tourist,
   },
 ];
 
@@ -96,6 +95,7 @@ export function VisaCards({ heading = true }: { heading?: boolean }) {
 
 function VisaCard({ item }: { item: Item }) {
   const { Icon, highlight } = item;
+
   return (
     <Link
       to={item.to}
@@ -116,7 +116,7 @@ function VisaCard({ item }: { item: Item }) {
             <div className="pointer-events-none absolute -inset-px rounded-3xl ring-1 ring-inset ring-gold/20" />
           </>
         )}
-        {/* Spotlight on hover */}
+
         <div className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,oklch(0.78_0.10_82/0.25),transparent_55%)]" />
         </div>

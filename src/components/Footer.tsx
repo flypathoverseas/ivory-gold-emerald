@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { Globe, Send, AtSign, MapPin, Phone } from "lucide-react";
 import logo from "@/assets/logo.png";
 
@@ -6,7 +6,6 @@ export function Footer() {
   return (
     <footer className="relative overflow-hidden bg-onyx pt-24 pb-10 text-cream/80">
       <div className="absolute inset-x-0 top-0 divider-gold" />
-      <div className="pointer-events-none absolute -top-40 left-1/2 h-[400px] w-[700px] -translate-x-1/2 rounded-full bg-gold/5 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-6">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
@@ -59,7 +58,7 @@ export function Footer() {
                 placeholder="your@email.com"
                 className="w-full bg-transparent text-sm text-cream placeholder:text-cream/40 focus:outline-none"
               />
-              <button type="submit" className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-gradient-gold text-onyx">
+              <button type="submit" className="inline-flex h-9 w-9 items-center justify-center rounded-full btn-emerald text-cream">
                 <Send className="h-4 w-4" />
               </button>
             </form>

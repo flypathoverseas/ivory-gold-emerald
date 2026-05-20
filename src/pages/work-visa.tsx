@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { PageHero } from "@/components/PageHero";
 import { CountryGrid } from "@/components/CountryGrid";
@@ -6,17 +6,7 @@ import { Contact } from "@/components/Contact";
 import { ArrowRight, Briefcase, Building2, Globe2, ShieldCheck } from "lucide-react";
 import work from "@/assets/work-visa.jpg";
 
-export const Route = createFileRoute("/work-visa")({
-  component: WorkVisaPage,
-  head: () => ({
-    meta: [
-      { title: "Work Visa — Fly Path Overseas" },
-      { name: "description", content: "Skilled work visa & PR pathways for Canada, UK, UAE, Germany and Australia. Flagship program." },
-      { property: "og:title", content: "Work Visa — Fly Path Overseas" },
-      { property: "og:image", content: work },
-    ],
-  }),
-});
+
 
 const programs = [
   { country: "Canada", program: "Express Entry · PNP", salary: "CAD 75–150K", pr: "PR in 6–12 months" },
@@ -27,7 +17,7 @@ const programs = [
   { country: "New Zealand", program: "AEWV · Skilled Migrant", salary: "NZD 80–140K", pr: "Residence pathway" },
 ];
 
-function WorkVisaPage() {
+export default function WorkVisaPage() {
   return (
     <main>
       <PageHero
@@ -38,7 +28,7 @@ function WorkVisaPage() {
         height="lg"
       >
         <div className="flex flex-wrap gap-3">
-          <Link to="/contact" className="inline-flex items-center gap-3 rounded-full bg-gradient-gold px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] text-onyx shadow-gold">
+          <Link to="/contact" className="inline-flex items-center gap-3 rounded-full btn-emerald px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.2em]">
             Start Application <ArrowRight className="h-4 w-4" />
           </Link>
           <a href="https://wa.me/919701947979" className="inline-flex items-center gap-3 rounded-full glass px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] text-cream">

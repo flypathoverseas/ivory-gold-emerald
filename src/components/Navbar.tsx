@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, MessageCircle } from "lucide-react";
-import { Link, useLocation } from "@tanstack/react-router";
+import { Link, useLocation } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
 const links = [
@@ -70,14 +70,14 @@ export function Navbar() {
               href="https://wa.me/919701947979"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden h-10 w-10 items-center justify-center rounded-full border border-gold/30 text-gold transition-all hover:bg-gold hover:text-onyx lg:inline-flex"
+              className="hidden h-10 w-10 items-center justify-center rounded-full border border-gold/30 text-gold transition-all hover:bg-emerald-base hover:text-cream lg:inline-flex"
               aria-label="WhatsApp"
             >
               <MessageCircle className="h-4 w-4" />
             </a>
             <Link
               to="/contact"
-              className="hidden rounded-full bg-gradient-gold px-5 py-2.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-onyx shadow-gold transition-transform hover:scale-[1.03] lg:inline-flex"
+              className="hidden rounded-full btn-emerald px-5 py-2.5 text-[11px] font-semibold uppercase tracking-[0.18em] lg:inline-flex"
             >
               Apply Now
             </Link>
@@ -113,7 +113,7 @@ export function Navbar() {
               ))}
               <Link
                 to="/contact"
-                className="mt-1 rounded-xl bg-gradient-gold px-4 py-3 text-center text-xs font-semibold uppercase tracking-widest text-onyx"
+                className="mt-1 rounded-xl btn-emerald px-4 py-3 text-center text-xs font-semibold uppercase tracking-widest"
               >
                 Apply Now
               </Link>

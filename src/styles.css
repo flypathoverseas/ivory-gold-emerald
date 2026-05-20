@@ -46,49 +46,55 @@
   --radius: 0.5rem;
 
   /* Luxury dark palette — inspired by Emirates / Rolex */
-  --onyx: oklch(0.16 0.012 170);            /* #0A1210 */
-  --charcoal: oklch(0.22 0.006 170);        /* #1B1F1E matte charcoal */
-  --emerald-deep: oklch(0.34 0.07 162);     /* #0F4A3F */
-  --emerald-glow: oklch(0.48 0.11 160);     /* accent glow */
-  --gold: oklch(0.78 0.10 82);              /* #C8A96A champagne */
-  --gold-soft: oklch(0.88 0.07 84);
-  --cream: oklch(0.95 0.02 84);             /* #F2E9D8 */
+  --onyx: #081A16;               /* deepest emerald-black */
+  --charcoal: #0C332B;           /* dark forest shadow */
+  --emerald-deep: #0B3D35;       /* luxury emerald depth */
+  --emerald-base: #0F5C4D;       /* primary emerald tone */
+  --emerald-glow: #11A07A;       /* subtle emerald accent */
+  --gold: #D4AF37;               /* metallic gold */
+  --gold-soft: #C9A227;          /* warm gold accent */
+  --cream: #F2E6C8;              /* creamy warm highlight */
 
-  --background: var(--onyx);
+  --background: var(--emerald-deep);
   --foreground: var(--cream);
-  --card: var(--charcoal);
+  --card: rgba(15,92,77,0.28);
   --card-foreground: var(--cream);
-  --popover: var(--charcoal);
+  --popover: rgba(11,61,53,0.55);
   --popover-foreground: var(--cream);
-  --primary: var(--gold);
-  --primary-foreground: var(--onyx);
+  --primary: var(--emerald-base);
+  --primary-foreground: var(--cream);
   --secondary: var(--charcoal);
   --secondary-foreground: var(--cream);
-  --muted: oklch(0.25 0.008 170);
-  --muted-foreground: oklch(0.72 0.02 84);
-  --accent: var(--emerald-glow);
-  --accent-foreground: var(--cream);
-  --destructive: oklch(0.55 0.2 25);
+  --muted: rgba(255,255,255,0.12);
+  --muted-foreground: rgba(255,255,255,0.65);
+  --accent: var(--gold);
+  --accent-foreground: var(--emerald-deep);
+  --destructive: #B23A2F;
   --destructive-foreground: var(--cream);
-  --border: oklch(1 0 0 / 0.08);
-  --input: oklch(1 0 0 / 0.08);
+  --border: rgba(212,175,55,0.16);
+  --input: rgba(255,255,255,0.08);
   --ring: var(--gold);
 
-  --gradient-onyx: radial-gradient(ellipse at top, oklch(0.22 0.04 165) 0%, oklch(0.12 0.012 170) 60%, oklch(0.08 0.008 170) 100%);
-  --gradient-gold: linear-gradient(135deg, oklch(0.9 0.08 86) 0%, oklch(0.72 0.11 78) 100%);
-  --gradient-emerald: linear-gradient(135deg, oklch(0.42 0.09 162) 0%, oklch(0.18 0.03 165) 100%);
+  --gradient-onyx: radial-gradient(circle at top, rgba(15,92,77,0.9) 0%, rgba(8,26,22,0.95) 55%, rgba(5,19,15,1) 100%);
+  --gradient-gold: linear-gradient(135deg, #E4C76A 0%, #C9A227 100%);
+  --gradient-emerald: linear-gradient(135deg, #0F5C4D 0%, #0B3D35 100%);
 
-  --shadow-gold: 0 10px 50px -10px oklch(0.78 0.10 82 / 0.45);
-  --shadow-luxury: 0 40px 100px -30px oklch(0 0 0 / 0.7);
-  --shadow-soft: 0 8px 30px -10px oklch(0 0 0 / 0.4);
+  --shadow-gold: 0 16px 60px -28px rgba(212,175,55,0.35);
+  --shadow-luxury: 0 40px 100px -30px rgba(0,0,0,0.7);
+  --shadow-soft: 0 8px 30px -10px rgba(0,0,0,0.3);
 }
 
 @layer base {
   * { border-color: var(--color-border); }
   html { scroll-behavior: smooth; }
   body {
-    background: var(--gradient-onyx);
     background-color: var(--color-background);
+    background-image:
+      radial-gradient(circle at 20% 20%, rgba(255,255,255,0.04) 0%, transparent 18%),
+      linear-gradient(135deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 42px),
+      var(--gradient-onyx);
+    background-size: cover;
+    background-repeat: no-repeat;
     color: var(--color-foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
@@ -129,16 +135,28 @@
   }
 
   .glass {
-    background: oklch(0.18 0.01 170 / 0.55);
+    background: rgba(15,92,77,0.45);
     backdrop-filter: blur(24px) saturate(160%);
     -webkit-backdrop-filter: blur(24px) saturate(160%);
-    border: 1px solid oklch(1 0 0 / 0.08);
+    border: 1px solid rgba(212,175,55,0.12);
   }
   .glass-gold {
-    background: oklch(0.18 0.01 170 / 0.5);
+    background: rgba(11,61,53,0.50);
     backdrop-filter: blur(24px) saturate(160%);
     -webkit-backdrop-filter: blur(24px) saturate(160%);
-    border: 1px solid oklch(0.78 0.10 82 / 0.35);
+    border: 1px solid rgba(212,175,55,0.28);
+  }
+
+  .btn-emerald {
+    background: var(--emerald-deep);
+    color: var(--cream);
+    border: 1px solid rgba(212,175,55,0.2);
+    box-shadow: 0 18px 50px -30px rgba(212,175,55,0.35);
+    transition: background-color .25s ease, box-shadow .25s ease, transform .25s ease;
+  }
+  .btn-emerald:hover {
+    background: var(--emerald-base);
+    box-shadow: 0 18px 70px -28px rgba(212,175,55,0.35);
   }
 
   .shadow-gold { box-shadow: var(--shadow-gold); }
@@ -147,7 +165,7 @@
 
   .gold-glow { transition: box-shadow .4s ease, transform .4s ease; }
   .gold-glow:hover {
-    box-shadow: 0 0 0 1px var(--gold), 0 24px 70px -20px oklch(0.78 0.10 82 / 0.55);
+    box-shadow: 0 0 0 1px var(--gold), 0 24px 70px -20px rgba(212,175,55,0.45);
   }
 
   .ken-burns { animation: kenBurns 22s ease-in-out infinite alternate; }
@@ -180,4 +198,5 @@
     height: 1px;
     background: linear-gradient(90deg, transparent, oklch(0.78 0.10 82 / 0.6), transparent);
   }
+
 }

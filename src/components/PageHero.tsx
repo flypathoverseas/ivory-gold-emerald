@@ -45,7 +45,6 @@ export function PageHero({ eyebrow, title, subtitle, image, videoSrc, height = "
             transition={{ duration: 0.8 }}
             className="mb-5 inline-flex items-center gap-3 rounded-full border border-gold/40 bg-onyx/40 px-4 py-1.5 backdrop-blur-md"
           >
-            <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-gold" />
             <span className="text-[10px] font-medium uppercase tracking-[0.3em] text-cream/85">{eyebrow}</span>
           </motion.div>
 

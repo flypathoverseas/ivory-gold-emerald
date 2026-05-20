@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Phone, MessageCircle } from "lucide-react";
-import { Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import hero from "@/assets/hero-airport.jpg";
 
 const counters = [
@@ -21,23 +21,6 @@ export function Hero() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,transparent_0%,oklch(0.08_0.008_170/0.85)_100%)]" />
       </div>
 
-      {/* Floating gold particles (deterministic positions for SSR safety) */}
-      <div className="pointer-events-none absolute inset-0">
-        {Array.from({ length: 22 }).map((_, i) => (
-          <motion.span
-            key={i}
-            className="absolute h-1 w-1 rounded-full bg-gold"
-            style={{
-              left: `${(i * 53) % 100}%`,
-              top: `${(i * 37) % 100}%`,
-              filter: "blur(0.5px)",
-            }}
-            animate={{ y: [0, -30, 0], opacity: [0.15, 0.85, 0.15] }}
-            transition={{ duration: 4 + (i % 5), repeat: Infinity, delay: (i % 7) * 0.3, ease: "easeInOut" }}
-          />
-        ))}
-      </div>
-
       <motion.div
         className="pointer-events-none absolute -top-1/2 left-1/4 h-[200%] w-[2px] rotate-[20deg] bg-gradient-to-b from-transparent via-gold/40 to-transparent"
         animate={{ x: [-200, 800] }}
@@ -52,7 +35,6 @@ export function Hero() {
             transition={{ duration: 0.9, delay: 0.3 }}
             className="mb-6 inline-flex items-center gap-3 rounded-full border border-gold/40 bg-onyx/40 px-5 py-2 backdrop-blur-md"
           >
-            <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-gold" />
             <span className="text-[10px] font-medium uppercase tracking-[0.3em] text-cream/80">
               Global Mobility · Since 2010
             </span>
@@ -98,7 +80,7 @@ export function Hero() {
           >
             <Link
               to="/work-visa"
-              className="group inline-flex items-center gap-3 rounded-full bg-gradient-gold px-7 py-4 text-xs font-semibold uppercase tracking-[0.2em] text-onyx shadow-gold transition-transform hover:scale-[1.03]"
+              className="btn-emerald group inline-flex items-center gap-3 rounded-full px-7 py-4 text-xs font-semibold uppercase tracking-[0.2em] shadow-gold transition-transform hover:scale-[1.03]"
             >
               Apply Now
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />

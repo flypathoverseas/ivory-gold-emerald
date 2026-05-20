@@ -1,21 +1,11 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { PageHero } from "@/components/PageHero";
 import { Contact } from "@/components/Contact";
 import { ArrowRight, Plane, Globe2, Camera, Users } from "lucide-react";
 import tourist from "@/assets/tourist-visa.jpg";
 
-export const Route = createFileRoute("/tourist-visa")({
-  component: TouristVisaPage,
-  head: () => ({
-    meta: [
-      { title: "Tourist Visa — Fly Path Overseas" },
-      { name: "description", content: "Schengen, US, UK and family tourist visas — fast-tracked with concierge support." },
-      { property: "og:title", content: "Tourist Visa — Fly Path Overseas" },
-      { property: "og:image", content: tourist },
-    ],
-  }),
-});
+
 
 const destinations = [
   { region: "Schengen Europe", note: "26 countries · 90-day stay" },
@@ -26,7 +16,7 @@ const destinations = [
   { region: "Japan", note: "Single & multi-entry" },
 ];
 
-function TouristVisaPage() {
+export default function TouristVisaPage() {
   return (
     <main>
       <PageHero
@@ -35,7 +25,7 @@ function TouristVisaPage() {
         subtitle="From Schengen weekenders to luxury family itineraries — tourist visas handled end-to-end."
         image={tourist}
       >
-        <Link to="/contact" className="inline-flex items-center gap-3 rounded-full bg-gradient-gold px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] text-onyx shadow-gold">
+        <Link to="/contact" className="inline-flex items-center gap-3 rounded-full btn-emerald px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.2em]">
           Plan My Trip <ArrowRight className="h-4 w-4" />
         </Link>
       </PageHero>

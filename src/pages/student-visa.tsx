@@ -1,21 +1,11 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { PageHero } from "@/components/PageHero";
 import { Contact } from "@/components/Contact";
 import { ArrowRight, GraduationCap, BookOpen, Award, Users } from "lucide-react";
 import student from "@/assets/student-visa.jpg";
 
-export const Route = createFileRoute("/student-visa")({
-  component: StudentVisaPage,
-  head: () => ({
-    meta: [
-      { title: "Student Visa — Fly Path Overseas" },
-      { name: "description", content: "Top universities and student visa programs across UK, Canada, Australia, USA and Germany." },
-      { property: "og:title", content: "Student Visa — Fly Path Overseas" },
-      { property: "og:image", content: student },
-    ],
-  }),
-});
+
 
 const universities = [
   { country: "United Kingdom", picks: "Oxford · Cambridge · UCL · Edinburgh" },
@@ -26,7 +16,7 @@ const universities = [
   { country: "Ireland", picks: "Trinity · UCD · NUIG" },
 ];
 
-function StudentVisaPage() {
+export default function StudentVisaPage() {
   return (
     <main>
       <PageHero
@@ -35,7 +25,7 @@ function StudentVisaPage() {
         subtitle="Curated university placements, scholarship strategy and student visa concierge for elite global campuses."
         image={student}
       >
-        <Link to="/contact" className="inline-flex items-center gap-3 rounded-full bg-gradient-gold px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] text-onyx shadow-gold">
+        <Link to="/contact" className="inline-flex items-center gap-3 rounded-full btn-emerald px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.2em]">
           Profile Evaluation <ArrowRight className="h-4 w-4" />
         </Link>
       </PageHero>

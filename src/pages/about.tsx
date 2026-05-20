@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+
 import { motion } from "framer-motion";
 import { PageHero } from "@/components/PageHero";
 import { WhyUs } from "@/components/WhyUs";
@@ -6,18 +6,9 @@ import { Testimonials } from "@/components/Testimonials";
 import { Contact } from "@/components/Contact";
 import hero from "@/assets/hero-airport.jpg";
 
-export const Route = createFileRoute("/about")({
-  component: AboutPage,
-  head: () => ({
-    meta: [
-      { title: "About — Fly Path Overseas" },
-      { name: "description", content: "A boutique global mobility house crafting bespoke visa journeys since 2010." },
-      { property: "og:title", content: "About Fly Path Overseas" },
-    ],
-  }),
-});
 
-function AboutPage() {
+
+export default function AboutPage() {
   return (
     <main>
       <PageHero

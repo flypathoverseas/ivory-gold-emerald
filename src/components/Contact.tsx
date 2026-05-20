@@ -4,8 +4,6 @@ import { MessageCircle, AtSign, Phone, MapPin } from "lucide-react";
 export function Contact() {
   return (
     <section className="relative overflow-hidden bg-charcoal py-28">
-      <div className="pointer-events-none absolute -top-32 left-0 h-[400px] w-[400px] rounded-full bg-emerald-deep/25 blur-3xl" />
-      <div className="pointer-events-none absolute bottom-0 right-0 h-[400px] w-[400px] rounded-full bg-gold/10 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-6">
         <div className="grid gap-12 lg:grid-cols-2">
@@ -55,7 +53,7 @@ export function Contact() {
               <textarea rows={4} placeholder="Tell us about your goals..." className="w-full rounded-xl border border-cream/15 bg-onyx/40 px-4 py-3 text-sm text-cream placeholder:text-cream/40 focus:border-gold focus:outline-none" />
             </div>
 
-            <button className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-gold px-6 py-4 text-xs font-semibold uppercase tracking-[0.25em] text-onyx shadow-gold transition-transform hover:scale-[1.01]">
+            <button className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full btn-emerald px-6 py-4 text-xs font-semibold uppercase tracking-[0.25em] transition-transform hover:scale-[1.01]">
               Request Consultation
             </button>
           </motion.form>
