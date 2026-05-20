@@ -134,7 +134,7 @@ export function Hero() {
               <Phone className="h-4 w-4" /> Free Consultation
             </a>
             <a
-              href="https://wa.me/919999999999"
+              href="https://wa.me/919701947979"
               className="inline-flex items-center gap-2 rounded-full border border-ivory/20 px-5 py-4 text-sm font-medium text-ivory/80 transition-all hover:border-gold hover:text-gold"
             >
               <MessageCircle className="h-4 w-4" /> WhatsApp
