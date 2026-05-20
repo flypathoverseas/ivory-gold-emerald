@@ -17,14 +17,6 @@ type Item = {
 
 const items: Item[] = [
   {
-    to: "/student-visa",
-    label: "Education",
-    title: "Student Visa",
-    desc: "World-class universities across UK, Canada, Australia & Germany.",
-    Icon: GraduationCap,
-    image: student,
-  },
-  {
     to: "/work-visa",
     label: "Career Abroad — Flagship",
     title: "Work Visa",
@@ -32,6 +24,14 @@ const items: Item[] = [
     Icon: Briefcase,
     highlight: true,
     image: work,
+  },
+  {
+    to: "/student-visa",
+    label: "Education",
+    title: "Student Visa",
+    desc: "World-class universities across UK, Canada, Australia & Germany.",
+    Icon: GraduationCap,
+    image: student,
   },
   {
     to: "/tourist-visa",
