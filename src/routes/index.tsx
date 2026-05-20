@@ -33,6 +33,7 @@ function Index() {
       <Testimonials />
       <Contact />
       <Footer />
+      <WhatsAppFab />
     </main>
   );
 }
