@@ -1,13 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
-import { WorkVisa } from "@/components/WorkVisa";
-import { StudentVisa, TouristVisa } from "@/components/SecondaryVisas";
+import { VisaCards } from "@/components/VisaCards";
+import { CountryGrid } from "@/components/CountryGrid";
 import { WhyUs } from "@/components/WhyUs";
 import { Testimonials } from "@/components/Testimonials";
 import { Contact } from "@/components/Contact";
-import { Footer } from "@/components/Footer";
-import { WhatsAppFab } from "@/components/WhatsAppFab";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -15,25 +12,19 @@ export const Route = createFileRoute("/")({
     meta: [
       { title: "Fly Path Overseas — Luxury Global Mobility & Visa Experts" },
       { name: "description", content: "Premium work, student & tourist visa concierge. Bespoke immigration strategy for Canada, UK, Australia, Germany, UAE & more." },
-      { property: "og:title", content: "Fly Path Overseas — Luxury Global Mobility" },
-      { property: "og:description", content: "Premium work, student & tourist visa concierge for global professionals." },
     ],
   }),
 });
 
 function Index() {
   return (
-    <main className="bg-ivory">
-      <Navbar />
+    <main>
       <Hero />
-      <WorkVisa />
-      <StudentVisa />
-      <TouristVisa />
+      <VisaCards />
+      <CountryGrid />
       <WhyUs />
       <Testimonials />
       <Contact />
-      <Footer />
-      <WhatsAppFab />
     </main>
   );
 }

@@ -1,46 +1,43 @@
 import { motion } from "framer-motion";
-import { Quote, Star } from "lucide-react";
+import { Quote } from "lucide-react";
 
-const reviews = [
-  { name: "Aarav Mehta", role: "Software Engineer · Toronto", text: "Fly Path turned an intimidating Express Entry process into a polished, predictable journey. PR in eight months." },
-  { name: "Sara Khan", role: "MSc Student · London", text: "From SOP to scholarship paperwork — the advisors treated my application like it was their own." },
-  { name: "Daniel Roy", role: "Project Manager · Dubai", text: "Golden Visa secured with zero hassle. The single-point-of-contact model is genuinely concierge-grade." },
-  { name: "Priya Sharma", role: "Doctor · Sydney", text: "Skilled visa, registration paperwork, even relocation guidance — handled end-to-end with warmth." },
+const items = [
+  { name: "Aarav Mehta", role: "Software Engineer · Canada PR", text: "The most premium visa experience I've had. They engineered every detail — from documentation to landing." },
+  { name: "Sara Khan", role: "MSc Edinburgh", text: "Felt like a private concierge. My UK student visa was approved in record time with zero stress." },
+  { name: "Rajesh & Family", role: "Schengen Tour", text: "Beautifully handled. The team made our European family trip feel effortless and luxurious." },
 ];
 
 export function Testimonials() {
   return (
-    <section className="relative overflow-hidden bg-charcoal py-28 text-ivory">
-      <div className="pointer-events-none absolute -top-20 left-1/2 h-[400px] w-[400px] -translate-x-1/2 rounded-full bg-gold/10 blur-[120px]" />
-
+    <section className="relative overflow-hidden bg-onyx py-28">
+      <div className="pointer-events-none absolute inset-x-0 top-0 divider-gold" />
       <div className="mx-auto max-w-7xl px-6">
-        <div className="text-center">
-          <span className="text-xs font-medium uppercase tracking-[0.3em] text-gold">✦ Client Stories</span>
-          <h2 className="mt-4 font-display text-5xl sm:text-6xl">
-            Trusted by <span className="italic text-gradient-gold">global movers.</span>
+        <div className="mx-auto mb-16 max-w-2xl text-center">
+          <span className="inline-flex items-center gap-2 rounded-full border border-gold/30 px-4 py-1.5 text-[10px] uppercase tracking-[0.3em] text-gold">
+            Client Voices
+          </span>
+          <h2 className="mt-5 font-display text-4xl text-cream sm:text-5xl">
+            Stories of <span className="italic text-gradient-gold">Arrival</span>
           </h2>
         </div>
 
-        <div className="mt-16 grid gap-6 md:grid-cols-2">
-          {reviews.map((r, i) => (
+        <div className="grid gap-6 md:grid-cols-3">
+          {items.map((t, i) => (
             <motion.figure
-              key={r.name}
+              key={t.name}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className="glass-dark relative rounded-3xl p-10 transition-all duration-500 hover:border-gold/40"
+              transition={{ duration: 0.6, delay: i * 0.1 }}
+              className="relative rounded-2xl border border-cream/10 bg-charcoal/70 p-8 backdrop-blur"
             >
-              <Quote className="absolute right-8 top-8 h-10 w-10 text-gold/20" />
-              <div className="mb-4 flex gap-0.5 text-gold">
-                {Array.from({ length: 5 }).map((_, j) => <Star key={j} className="h-4 w-4 fill-current" />)}
-              </div>
-              <blockquote className="font-display text-2xl leading-snug text-ivory">
-                "{r.text}"
+              <Quote className="h-7 w-7 text-gold/70" />
+              <blockquote className="mt-5 font-display text-xl leading-snug text-cream">
+                "{t.text}"
               </blockquote>
-              <figcaption className="mt-6 border-t border-ivory/10 pt-5">
-                <div className="font-medium text-ivory">{r.name}</div>
-                <div className="text-sm text-ivory/50">{r.role}</div>
+              <figcaption className="mt-6 border-t border-cream/10 pt-4">
+                <div className="text-sm font-semibold text-cream">{t.name}</div>
+                <div className="mt-0.5 text-[11px] uppercase tracking-[0.2em] text-gold/80">{t.role}</div>
               </figcaption>
             </motion.figure>
           ))}
