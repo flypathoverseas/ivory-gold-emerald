@@ -7,6 +7,7 @@ import { WhyUs } from "@/components/WhyUs";
 import { Testimonials } from "@/components/Testimonials";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
+import { WhatsAppFab } from "@/components/WhatsAppFab";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -32,6 +33,7 @@ function Index() {
       <Testimonials />
       <Contact />
       <Footer />
+      <WhatsAppFab />
     </main>
   );
 }

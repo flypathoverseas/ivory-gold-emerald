@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, MessageCircle, Send } from "lucide-react";
 
 const details = [
-  { icon: Phone, label: "Call Us", value: "+91 99999 99999", href: "tel:+919999999999" },
-  { icon: MessageCircle, label: "WhatsApp", value: "+91 99999 99999", href: "https://wa.me/919999999999" },
+  { icon: Phone, label: "Call Us", value: "+91 97019 47979", href: "tel:+919701947979" },
+  { icon: MessageCircle, label: "WhatsApp", value: "+91 97019 47979", href: "https://wa.me/919701947979" },
   { icon: Mail, label: "Email", value: "info@flypathoverseas.com", href: "mailto:info@flypathoverseas.com" },
   { icon: MapPin, label: "Office", value: "Hyderabad, India", href: "#" },
 ];
