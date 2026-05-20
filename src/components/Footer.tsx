@@ -1,4 +1,5 @@
-import { Instagram, Facebook, Linkedin, Youtube } from "lucide-react";
+import { Send, Globe, AtSign, MessageSquare } from "lucide-react";
+const socials = [Globe, Send, AtSign, MessageSquare];
 import logo from "@/assets/logo.png";
 
 export function Footer() {
@@ -17,8 +18,8 @@ export function Footer() {
               with the precision of a concierge.
             </p>
             <div className="mt-6 flex gap-3">
-              {[Instagram, Facebook, Linkedin, Youtube].map((Icon, i) => (
-                <a key={i} href="#" className="flex h-10 w-10 items-center justify-center rounded-full border border-ivory/15 text-ivory/70 transition-all hover:border-gold hover:text-gold">
+              {socials.map((Icon, i) => (
+                <a key={i} href="#" aria-label="Social" className="flex h-10 w-10 items-center justify-center rounded-full border border-ivory/15 text-ivory/70 transition-all hover:border-gold hover:text-gold">
                   <Icon className="h-4 w-4" />
                 </a>
               ))}
