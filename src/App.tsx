@@ -7,6 +7,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { WhatsAppFab } from "@/components/WhatsAppFab";
+import { ScrollToTop } from "@/components/ScrollToTop";
 
 // Pages
 import Index from "@/pages/index";
@@ -24,6 +25,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <BrowserRouter>
+          <ScrollToTop />
           <div className="relative min-h-screen bg-onyx text-cream">
             <Navbar />
             <Routes>

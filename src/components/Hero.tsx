@@ -14,7 +14,7 @@ const flags = ["🇨🇦", "🇬🇧", "🇦🇺", "🇩🇪", "🇦🇪", "🇳
 
 export function Hero() {
   return (
-    <section className="relative h-screen min-h-[760px] w-full overflow-hidden bg-onyx">
+    <section className="relative h-screen min-h-[840px] w-full overflow-hidden bg-onyx">
       <div className="absolute inset-0">
         <img src={hero} alt="Cinematic luxury airport at dusk" className="ken-burns h-full w-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-onyx/55 via-onyx/55 to-onyx" />
@@ -27,7 +27,7 @@ export function Hero() {
         transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}
       />
 
-      <div className="relative z-10 flex h-full flex-col justify-center px-6 pt-24">
+      <div className="relative z-10 flex h-full flex-col justify-center px-6 pt-32 pb-28 sm:pt-40 sm:pb-32 lg:pt-48 lg:pb-36">
         <div className="mx-auto w-full max-w-7xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -104,7 +104,7 @@ export function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1.6 }}
-            className="mt-14 grid max-w-3xl grid-cols-2 gap-8 sm:grid-cols-4"
+            className="mt-14 grid max-w-3xl grid-cols-2 gap-6 sm:gap-8 sm:grid-cols-4"
           >
             {counters.map((c) => (
               <div key={c.label} className="border-l border-gold/30 pl-4">
