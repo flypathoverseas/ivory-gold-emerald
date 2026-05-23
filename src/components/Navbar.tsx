@@ -30,15 +30,15 @@ export function Navbar() {
             <img
               src={logo}
               alt="Fly Path Overseas"
-              className="h-14 sm:h-16 lg:h-20 w-14 sm:w-16 lg:w-20 object-contain flex-shrink-0 transition-transform duration-300 group-hover:scale-105"
+              className="h-10 sm:h-14 md:h-16 lg:h-20 w-auto object-contain flex-shrink-0 transition-transform duration-300 group-hover:scale-105"
               width={80}
               height={80}
               loading="eager"
               decoding="async"
             />
-            <span className="flex-1 min-w-0 flex flex-col font-display text-[10px] sm:text-[11px] md:text-sm lg:text-base xl:text-lg font-bold tracking-[0.18em] text-cream group-hover:text-gold transition-colors duration-300 leading-tight whitespace-normal max-w-[calc(100vw-8rem)]">
-              <span>FLY PATH</span>
-              <span className="text-gold">OVERSEAS</span>
+            <span className="flex-1 min-w-0 ml-3 flex flex-col font-display text-[12px] sm:text-[13px] md:text-sm lg:text-base xl:text-lg font-semibold tracking-[0.14em] text-cream group-hover:text-gold transition-colors duration-300 leading-tight whitespace-nowrap max-w-[calc(100vw-6rem)]">
+              <span className="leading-tight">FLY PATH</span>
+              <span className="text-gold leading-tight">OVERSEAS</span>
             </span>
           </Link>
 
