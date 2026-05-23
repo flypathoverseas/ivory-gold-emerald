@@ -12,7 +12,7 @@ const programs = [
   { country: "Canada", program: "Express Entry · PNP", salary: "CAD 75–150K", pr: "PR in 6–12 months" },
   { country: "United Kingdom", program: "Skilled Worker · HPI", salary: "£42–110K", pr: "ILR in 5 years" },
   { country: "UAE", program: "Employment · Golden Visa", salary: "AED 20–60K/mo", pr: "10-year residency" },
-  { country: "Germany", program: "EU Blue Card", salary: "€58–110K", pr: "PR in 21–33 months" },
+  { country: "Europe", program: "EU Blue Card", salary: "€58–110K", pr: "PR in 21–33 months" },
   { country: "Australia", program: "Subclass 189 / 190 / 491", salary: "AUD 90–160K", pr: "PR pathway" },
   { country: "New Zealand", program: "AEWV · Skilled Migrant", salary: "NZD 80–140K", pr: "Residence pathway" },
 ];

@@ -5,7 +5,7 @@ const items = [
   { Icon: ShieldCheck, title: "Trusted Advisory", desc: "Senior immigration counsel with 15+ years of cross-border expertise." },
   { Icon: Award, title: "98% Success Rate", desc: "Approval-first strategy backed by transparent case ownership." },
   { Icon: Users, title: "Concierge Service", desc: "A single dedicated advisor — from first call to landing abroad." },
-  { Icon: Globe2, title: "40+ Countries", desc: "Active programs across Canada, UK, UAE, Australia, Germany & more." },
+  { Icon: Globe2, title: "40+ Countries", desc: "Active programs across Canada, UK, UAE, Australia, Europe & more." },
   { Icon: Sparkles, title: "White-Glove Process", desc: "Document curation, interview prep and relocation, fully handled." },
   { Icon: Clock, title: "Priority Timelines", desc: "Premium queueing and fast-tracked submissions, where eligible." },
 ];

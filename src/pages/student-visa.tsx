@@ -11,7 +11,7 @@ const universities = [
   { country: "United Kingdom", picks: "Oxford · Cambridge · UCL · Edinburgh" },
   { country: "Canada", picks: "Toronto · McGill · UBC · Waterloo" },
   { country: "Australia", picks: "Melbourne · ANU · Sydney · UNSW" },
-  { country: "Germany", picks: "TU Munich · Heidelberg · RWTH Aachen" },
+  { country: "Europe", picks: "TU Munich · Heidelberg · RWTH Aachen" },
   { country: "USA", picks: "MIT · Stanford · Harvard · Columbia" },
   { country: "Ireland", picks: "Trinity · UCD · NUIG" },
 ];

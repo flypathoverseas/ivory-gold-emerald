@@ -20,7 +20,7 @@ const items: Item[] = [
     to: "/work-visa",
     label: "Career Abroad — Flagship",
     title: "Work Visa",
-    desc: "Skilled & PR pathways into Canada, UK, UAE, Germany and beyond.",
+    desc: "Skilled & PR pathways into Canada, UK, UAE, Europe and beyond.",
     Icon: Briefcase,
     highlight: true,
     image: work,
@@ -29,7 +29,7 @@ const items: Item[] = [
     to: "/student-visa",
     label: "Education",
     title: "Student Visa",
-    desc: "World-class universities across UK, Canada, Australia & Germany.",
+    desc: "World-class universities across UK, Canada, Australia & Europe.",
     Icon: GraduationCap,
     image: student,
   },
@@ -145,7 +145,7 @@ function VisaCard({ item }: { item: Item }) {
 
         {highlight && (
           <div className="mt-6 flex flex-wrap gap-2">
-            {["Canada", "UK", "UAE", "Germany", "Australia"].map((c) => (
+            {["Canada", "UK", "UAE", "Europe", "Australia"].map((c) => (
               <span key={c} className="rounded-full border border-gold/25 bg-onyx/40 px-3 py-1 text-[10px] uppercase tracking-widest text-cream/70 backdrop-blur">
                 {c}
               </span>

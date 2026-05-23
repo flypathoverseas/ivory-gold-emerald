@@ -43,9 +43,9 @@ export function Footer() {
           <div>
             <h4 className="font-display text-xs uppercase tracking-[0.25em] text-gold">Contact</h4>
             <ul className="mt-5 space-y-3 text-sm text-cream/65">
-              <li className="flex items-start gap-2"><Phone className="mt-0.5 h-4 w-4 text-gold" /> +91 97019 47979</li>
-              <li className="flex items-start gap-2"><AtSign className="mt-0.5 h-4 w-4 text-gold" /> hello@flypathoverseas.com</li>
-              <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 text-gold" /> Hyderabad · Dubai · London</li>
+              <li className="flex items-start gap-2"><Phone className="mt-0.5 h-4 w-4 text-gold" /> <span className="flex flex-col gap-1"><span>+91 97019 47979</span><span>+91 9010006714</span></span></li>
+              <li className="flex items-start gap-2"><AtSign className="mt-0.5 h-4 w-4 text-gold" /> <a href="mailto:info@flypathoverseas.com" className="hover:text-gold transition-colors">info@flypathoverseas.com</a></li>
+              <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 text-gold" /> Acendia Ark 4th floor kondapur, hyderabad</li>
             </ul>
           </div>
 

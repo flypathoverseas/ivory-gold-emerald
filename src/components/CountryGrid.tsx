@@ -5,7 +5,7 @@ const countries = [
   { name: "Canada", flag: "🇨🇦", tagline: "Express Entry · PR Pathways", salary: "CAD 75K+", img: "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?w=1200&q=80&auto=format&fit=crop" },
   { name: "United Kingdom", flag: "🇬🇧", tagline: "Skilled Worker · HPI", salary: "£42K+", img: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1200&q=80&auto=format&fit=crop" },
   { name: "Australia", flag: "🇦🇺", tagline: "189 / 190 / 491 Visas", salary: "AUD 90K+", img: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=1200&q=80&auto=format&fit=crop" },
-  { name: "Germany", flag: "🇩🇪", tagline: "EU Blue Card · Opportunity", salary: "€58K+", img: "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=1200&q=80&auto=format&fit=crop" },
+  { name: "Europe", flag: "🇪🇺", tagline: "EU Blue Card · Opportunity", salary: "€58K+", img: "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=1200&q=80&auto=format&fit=crop" },
   { name: "UAE", flag: "🇦🇪", tagline: "Golden Visa · Employment", salary: "AED 25K/mo", img: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80&auto=format&fit=crop" },
   { name: "New Zealand", flag: "🇳🇿", tagline: "Skilled Migrant · AEWV", salary: "NZD 80K+", img: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&q=80&auto=format&fit=crop" },
 ];

@@ -113,7 +113,10 @@ export function Contact() {
                 <span className="grid h-10 w-10 place-items-center rounded-full border border-gold/30 text-gold">
                   <Phone className="h-4 w-4" />
                 </span>
-                +91 97019 47979
+                <span className="flex flex-col gap-1">
+                  <span>+91 97019 47979</span>
+                  <span>+91 9010006714</span>
+                </span>
               </li>
               <li className="flex items-center gap-3">
                 <span className="grid h-10 w-10 place-items-center rounded-full border border-gold/30 text-gold">
@@ -125,13 +128,13 @@ export function Contact() {
                 <span className="grid h-10 w-10 place-items-center rounded-full border border-gold/30 text-gold">
                   <AtSign className="h-4 w-4" />
                 </span>
-                hello@flypathoverseas.com
+                <a href="mailto:info@flypathoverseas.com" className="hover:text-gold transition-colors">info@flypathoverseas.com</a>
               </li>
               <li className="flex items-center gap-3">
                 <span className="grid h-10 w-10 place-items-center rounded-full border border-gold/30 text-gold">
                   <MapPin className="h-4 w-4" />
                 </span>
-                Hyderabad · Dubai · London
+                Acendia Ark 4th floor kondapur, hyderabad
               </li>
             </ul>
           </div>

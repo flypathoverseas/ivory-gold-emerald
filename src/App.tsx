@@ -28,15 +28,17 @@ function App() {
           <ScrollToTop />
           <div className="relative min-h-screen bg-onyx text-cream">
             <Navbar />
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/countries" element={<Countries />} />
-              <Route path="/student-visa" element={<StudentVisa />} />
-              <Route path="/tourist-visa" element={<TouristVisa />} />
-              <Route path="/work-visa" element={<WorkVisa />} />
-            </Routes>
+            <main className="pt-24">
+              <Routes>
+                <Route path="/" element={<Index />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/countries" element={<Countries />} />
+                <Route path="/student-visa" element={<StudentVisa />} />
+                <Route path="/tourist-visa" element={<TouristVisa />} />
+                <Route path="/work-visa" element={<WorkVisa />} />
+              </Routes>
+            </main>
             <Footer />
             <WhatsAppFab />
           </div>
