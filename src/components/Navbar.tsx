@@ -22,21 +22,21 @@ export function Navbar() {
       initial={{ y: -40, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-      className="fixed inset-x-0 top-0 z-50 overflow-hidden bg-onyx/95 backdrop-blur-sm border-b border-gold/20 transition-all duration-500"
+      className="fixed inset-x-0 top-0 z-50 bg-onyx/95 backdrop-blur-sm border-b border-gold/20 transition-all duration-500"
     >
       <div className="relative mx-auto w-full max-w-7xl px-6 py-3">
-        <div className="flex min-w-0 items-center justify-between gap-4">
+        <div className="flex min-w-0 items-center justify-between gap-3">
           <Link to="/" className="flex min-w-0 items-center gap-2.5 group">
             <img
               src={logo}
               alt="Fly Path Overseas"
-              className="h-16 sm:h-20 lg:h-24 w-16 sm:w-20 lg:w-24 object-contain flex-shrink-0 transition-transform duration-300 group-hover:scale-105"
-              width={96}
-              height={96}
+              className="h-14 sm:h-16 lg:h-20 w-14 sm:w-16 lg:w-20 object-contain flex-shrink-0 transition-transform duration-300 group-hover:scale-105"
+              width={80}
+              height={80}
               loading="eager"
               decoding="async"
             />
-            <span className="flex flex-col font-display text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg font-bold tracking-[0.18em] text-cream group-hover:text-gold transition-colors duration-300 leading-tight max-w-[calc(100vw-10rem)]">
+            <span className="flex-1 min-w-0 flex flex-col font-display text-[10px] sm:text-[11px] md:text-sm lg:text-base xl:text-lg font-bold tracking-[0.18em] text-cream group-hover:text-gold transition-colors duration-300 leading-tight whitespace-normal max-w-[calc(100vw-8rem)]">
               <span>FLY PATH</span>
               <span className="text-gold">OVERSEAS</span>
             </span>
