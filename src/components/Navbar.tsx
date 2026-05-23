@@ -26,9 +26,17 @@ export function Navbar() {
     >
       <div className="relative mx-auto w-full max-w-7xl px-6 py-3">
         <div className="flex min-w-0 items-center justify-between gap-4">
-          <Link to="/" className="flex items-center gap-2.5 flex-shrink-0 group min-w-fit">
-            <img src={logo} alt="Fly Path Overseas" className="h-14 sm:h-20 lg:h-24 w-14 sm:w-20 lg:w-24 object-contain flex-shrink-0 transition-transform duration-300 group-hover:scale-105" width={96} height={96} />
-            <span className="hidden sm:flex flex-col font-display text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-bold tracking-widest text-cream group-hover:text-gold transition-colors duration-300 whitespace-nowrap leading-tight">
+          <Link to="/" className="flex min-w-0 items-center gap-2.5 group">
+            <img
+              src={logo}
+              alt="Fly Path Overseas"
+              className="h-16 sm:h-20 lg:h-24 w-16 sm:w-20 lg:w-24 object-contain flex-shrink-0 transition-transform duration-300 group-hover:scale-105"
+              width={96}
+              height={96}
+              loading="eager"
+              decoding="async"
+            />
+            <span className="flex flex-col font-display text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg font-bold tracking-[0.18em] text-cream group-hover:text-gold transition-colors duration-300 leading-tight max-w-[calc(100vw-10rem)]">
               <span>FLY PATH</span>
               <span className="text-gold">OVERSEAS</span>
             </span>

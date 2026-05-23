@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/sonner";
@@ -19,8 +20,20 @@ import TouristVisa from "@/pages/tourist-visa";
 import WorkVisa from "@/pages/work-visa";
 
 const queryClient = new QueryClient();
+const logoPreloadHref = new URL("./assets/logo.png", import.meta.url).href;
 
 function App() {
+  useEffect(() => {
+    const link = document.createElement("link");
+    link.rel = "preload";
+    link.as = "image";
+    link.href = logoPreloadHref;
+    document.head.appendChild(link);
+    return () => {
+      document.head.removeChild(link);
+    };
+  }, []);
+
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
