@@ -22,7 +22,7 @@ export function Navbar() {
       initial={{ y: -40, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-      className="fixed inset-x-0 top-0 z-50 bg-onyx/95 backdrop-blur-sm border-b border-gold/20 transition-all duration-500"
+      className="fixed inset-x-0 top-0 z-50 bg-onyx/95 backdrop-blur-sm border-b border-orange/20 transition-all duration-500"
     >
       <div className="relative mx-auto w-full max-w-7xl px-6 py-3">
         <div className="flex min-w-0 items-center justify-between gap-3">
@@ -36,7 +36,7 @@ export function Navbar() {
               loading="eager"
               decoding="async"
             />
-            <span className="flex-1 min-w-0 ml-3 flex flex-col font-display text-[12px] sm:text-[13px] md:text-sm lg:text-base xl:text-lg font-semibold tracking-[0.14em] text-cream group-hover:text-gold transition-colors duration-300 leading-tight whitespace-nowrap max-w-[calc(100vw-6rem)]">
+            <span className="flex-1 min-w-0 ml-3 flex flex-col font-display text-[12px] sm:text-[13px] md:text-sm lg:text-base xl:text-lg font-semibold tracking-[0.14em] text-white group-hover:text-gold transition-colors duration-300 leading-tight whitespace-nowrap max-w-[calc(100vw-6rem)]">
               <span className="leading-tight">FLY PATH</span>
               <span className="text-gold leading-tight">OVERSEAS</span>
             </span>
@@ -50,7 +50,7 @@ export function Navbar() {
                     to={l.to}
                     className={({ isActive }) =>
                       `group relative px-4 py-2 text-sm font-semibold uppercase tracking-[0.14em] transition-all duration-300 whitespace-nowrap ${
-                        isActive ? "text-gold" : "text-cream/80 hover:text-gold"
+                        isActive ? "text-gold" : "text-white/80 hover:text-gold"
                       }`
                     }
                   >
@@ -90,7 +90,7 @@ export function Navbar() {
 
             <button
               onClick={() => setOpen(!open)}
-              className="inline-flex xl:hidden h-10 w-10 items-center justify-center rounded-lg border border-gold/30 text-cream transition-all duration-300 hover:border-gold/60 hover:bg-gold/10"
+              className="inline-flex xl:hidden h-10 w-10 items-center justify-center rounded-lg border border-gold/30 text-white transition-all duration-300 hover:border-gold/60 hover:bg-gold/10"
               aria-label="Menu"
             >
               {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -114,7 +114,7 @@ export function Navbar() {
                     to={l.to}
                     className={({ isActive }) =>
                       `group relative rounded-lg px-4 py-3 text-sm font-semibold uppercase tracking-[0.12em] transition-all duration-300 ${
-                        isActive ? "text-gold bg-gold/10" : "text-cream/80 hover:text-gold hover:bg-gold/5"
+                        isActive ? "text-gold bg-gold/10" : "text-white/80 hover:text-gold hover:bg-gold/5"
                       }`
                     }
                   >

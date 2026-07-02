@@ -12,13 +12,13 @@ const items = [
 
 export function WhyUs() {
   return (
-    <section className="relative bg-charcoal py-28">
+    <section className="relative bg-onyx py-28">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mx-auto mb-16 max-w-2xl text-center">
           <span className="inline-flex items-center gap-2 rounded-full border border-gold/30 px-4 py-1.5 text-[10px] uppercase tracking-[0.3em] text-gold">
             <span className="h-1 w-1 rounded-full bg-gold" /> Why Fly Path
           </span>
-          <h2 className="mt-5 font-display text-4xl text-cream sm:text-5xl">
+          <h2 className="mt-5 font-display text-4xl text-white sm:text-5xl">
             A House Built On <span className="italic text-gradient-gold">Trust</span>
           </h2>
         </div>
@@ -31,12 +31,12 @@ export function WhyUs() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.6, delay: i * 0.06 }}
-              className="group relative overflow-hidden rounded-2xl border border-cream/10 bg-onyx/60 p-7 backdrop-blur transition-all hover:border-gold/40"
+              className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur transition-all hover:border-orange/40"
             >
               <div className="pointer-events-none absolute inset-0 opacity-0 transition-opacity group-hover:opacity-100 bg-[radial-gradient(ellipse_at_top_left,oklch(0.78_0.10_82/0.12),transparent_60%)]" />
               <Icon className="h-7 w-7 text-gold" strokeWidth={1.5} />
-              <h3 className="mt-5 font-display text-2xl text-cream">{title}</h3>
-              <p className="mt-2 text-sm text-cream/65">{desc}</p>
+              <h3 className="mt-5 font-display text-2xl text-white">{title}</h3>
+              <p className="mt-2 text-sm text-white/65">{desc}</p>
             </motion.div>
           ))}
         </div>

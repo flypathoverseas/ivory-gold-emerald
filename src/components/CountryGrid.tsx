@@ -19,7 +19,7 @@ export function CountryGrid({ heading = true }: { heading?: boolean }) {
             <span className="inline-flex items-center gap-2 rounded-full border border-gold/30 px-4 py-1.5 text-[10px] uppercase tracking-[0.3em] text-gold">
               Destinations
             </span>
-            <h2 className="mt-5 font-display text-4xl text-cream sm:text-5xl">
+            <h2 className="mt-5 font-display text-4xl text-white sm:text-5xl">
               World-Class <span className="italic text-gradient-gold">Destinations</span>
             </h2>
           </div>
@@ -34,7 +34,7 @@ export function CountryGrid({ heading = true }: { heading?: boolean }) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.6, delay: i * 0.06 }}
-              className="group relative block h-80 overflow-hidden rounded-3xl border border-cream/10 shadow-luxury"
+              className="group relative block h-80 overflow-hidden rounded-3xl border border-white/10 shadow-luxury bg-onyx/95"
             >
               <img src={c.img} alt={c.name} className="ken-burns h-full w-full object-cover" loading="lazy" />
               <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent" />
@@ -42,10 +42,10 @@ export function CountryGrid({ heading = true }: { heading?: boolean }) {
 
               <div className="absolute inset-x-0 bottom-0 p-6">
                 <div className="flex items-center gap-2 text-3xl">{c.flag}</div>
-                <h3 className="mt-3 font-display text-3xl text-cream">{c.name}</h3>
+                <h3 className="mt-3 font-display text-3xl text-white">{c.name}</h3>
                 <p className="mt-1 text-[11px] uppercase tracking-[0.22em] text-gold">{c.tagline}</p>
                 <div className="mt-4 flex items-center justify-between">
-                  <span className="rounded-full border border-gold/30 bg-onyx/50 px-3 py-1 text-xs text-cream/80 backdrop-blur">
+                  <span className="rounded-full border border-gold/30 bg-onyx/50 px-3 py-1 text-xs text-white/80 backdrop-blur">
                     Avg. {c.salary}
                   </span>
                   <ArrowUpRight className="h-5 w-5 text-gold transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />

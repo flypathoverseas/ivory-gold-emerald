@@ -31,7 +31,7 @@ export default function WorkVisaPage() {
           <Link to="/contact" className="inline-flex items-center gap-3 rounded-full btn-emerald px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.2em]">
             Start Application <ArrowRight className="h-4 w-4" />
           </Link>
-          <a href="https://wa.me/919701947979" className="inline-flex items-center gap-3 rounded-full glass px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] text-cream">
+          <a href="https://wa.me/919701947979" className="inline-flex items-center gap-3 rounded-full glass px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] text-white">
             Talk to an Advisor
           </a>
         </div>
@@ -52,23 +52,23 @@ export default function WorkVisaPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.06 }}
-                className="rounded-2xl border border-cream/10 bg-charcoal/60 p-6"
+                className="rounded-2xl border border-white/10 bg-onyx/60 p-6"
               >
                 <Icon className="h-6 w-6 text-gold" strokeWidth={1.5} />
-                <div className="mt-4 font-display text-xl text-cream">{t}</div>
+                <div className="mt-4 font-display text-xl text-white">{t}</div>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-charcoal py-24">
+      <section className="bg-onyx py-24">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-12 max-w-2xl">
             <span className="text-[10px] uppercase tracking-[0.3em] text-gold">Active Programs</span>
-            <h2 className="mt-3 font-display text-4xl text-cream sm:text-5xl">Where will you <span className="italic text-gradient-gold">work next</span>?</h2>
+            <h2 className="mt-3 font-display text-4xl text-white sm:text-5xl">Where will you <span className="italic text-gradient-gold">work next</span>?</h2>
           </div>
-          <div className="overflow-hidden rounded-3xl border border-cream/10">
+          <div className="overflow-hidden rounded-3xl border border-white/10">
             <table className="w-full text-left text-sm">
               <thead className="bg-onyx/60 text-[10px] uppercase tracking-[0.2em] text-gold">
                 <tr>
@@ -80,8 +80,8 @@ export default function WorkVisaPage() {
               </thead>
               <tbody>
                 {programs.map((p) => (
-                  <tr key={p.country} className="border-t border-cream/10 text-cream/80 transition-colors hover:bg-onyx/40">
-                    <td className="px-6 py-5 font-display text-lg text-cream">{p.country}</td>
+                  <tr key={p.country} className="border-t border-white/10 text-white/80 transition-colors hover:bg-onyx/40">
+                    <td className="px-6 py-5 font-display text-lg text-white">{p.country}</td>
                     <td className="px-6 py-5">{p.program}</td>
                     <td className="px-6 py-5 text-gold">{p.salary}</td>
                     <td className="px-6 py-5">{p.pr}</td>

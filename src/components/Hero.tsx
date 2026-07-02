@@ -33,14 +33,13 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.3 }}
-            className="mb-6 inline-flex items-center gap-3 rounded-full border border-gold/40 bg-onyx/40 px-5 py-2 backdrop-blur-md"
+            className="mb-6 inline-flex items-center gap-3 rounded-full border border-orange/30 bg-white/5 px-5 py-2 backdrop-blur-md"
           >
-            <span className="text-[10px] font-medium uppercase tracking-[0.3em] text-cream/80">
+            <span className="text-[10px] font-medium uppercase tracking-[0.3em] text-white/80">
               Global Mobility · Since 2010
             </span>
           </motion.div>
-
-          <h1 className="max-w-5xl font-display text-5xl leading-[1.02] text-cream sm:text-7xl lg:text-[5.25rem]">
+          <h1 className="max-w-5xl font-display text-5xl leading-[1.02] text-white sm:text-7xl lg:text-[5.25rem]">
             {"Your Global Career".split(" ").map((w, i) => (
               <motion.span
                 key={i}
@@ -66,7 +65,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 1.1 }}
-            className="mt-7 max-w-2xl text-base text-cream/70 sm:text-lg"
+            className="mt-7 max-w-2xl text-base text-white/70 sm:text-lg"
           >
             A private concierge for international work, study and travel visas —
             engineered for ambitious professionals and global families.
@@ -87,14 +86,14 @@ export function Hero() {
             </Link>
             <Link
               to="/contact"
-              className="inline-flex items-center gap-3 rounded-full glass px-7 py-4 text-xs font-semibold uppercase tracking-[0.2em] text-cream transition-all hover:border-gold"
+              className="inline-flex items-center gap-3 rounded-full glass px-7 py-4 text-xs font-semibold uppercase tracking-[0.2em] text-white transition-all hover:border-gold"
             >
               <Phone className="h-4 w-4" /> Free Consultation
             </Link>
             <a
               href="https://wa.me/919701947979"
               target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-cream/15 px-5 py-4 text-xs font-medium text-cream/80 transition-all hover:border-gold hover:text-gold"
+              className="inline-flex items-center gap-2 rounded-full border border-white/15 px-5 py-4 text-xs font-medium text-white/80 transition-all hover:border-orange hover:text-orange"
             >
               <MessageCircle className="h-4 w-4" /> WhatsApp
             </a>
@@ -108,15 +107,15 @@ export function Hero() {
           >
             {counters.map((c) => (
               <div key={c.label} className="border-l border-gold/30 pl-4">
-                <div className="font-display text-3xl text-cream sm:text-4xl">{c.value}</div>
-                <div className="mt-1 text-[10px] uppercase tracking-[0.25em] text-cream/55">{c.label}</div>
+                <div className="font-display text-3xl text-white sm:text-4xl">{c.value}</div>
+                <div className="mt-1 text-[10px] uppercase tracking-[0.25em] text-white/55">{c.label}</div>
               </div>
             ))}
           </motion.div>
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 z-10 overflow-hidden border-t border-cream/10 bg-onyx/60 py-4 backdrop-blur-md">
+      <div className="absolute bottom-0 left-0 right-0 z-10 overflow-hidden border-t border-white/10 bg-onyx/60 py-4 backdrop-blur-md">
         <motion.div
           className="flex gap-12 whitespace-nowrap text-2xl"
           animate={{ x: ["0%", "-50%"] }}

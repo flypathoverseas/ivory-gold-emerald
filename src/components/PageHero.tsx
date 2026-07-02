@@ -45,14 +45,14 @@ export function PageHero({ eyebrow, title, subtitle, image, videoSrc, height = "
             transition={{ duration: 0.8 }}
             className="mb-5 inline-flex items-center gap-3 rounded-full border border-gold/40 bg-onyx/40 px-4 py-1.5 backdrop-blur-md"
           >
-            <span className="text-[10px] font-medium uppercase tracking-[0.3em] text-cream/85">{eyebrow}</span>
+            <span className="text-[10px] font-medium uppercase tracking-[0.3em] text-white/85">{eyebrow}</span>
           </motion.div>
 
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="max-w-4xl font-display text-4xl leading-[1.05] text-cream sm:text-6xl lg:text-7xl"
+            className="max-w-4xl font-display text-4xl leading-[1.05] text-white sm:text-6xl lg:text-7xl"
           >
             {title}
           </motion.h1>
@@ -62,7 +62,7 @@ export function PageHero({ eyebrow, title, subtitle, image, videoSrc, height = "
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.3 }}
-              className="mt-6 max-w-2xl text-base text-cream/70 sm:text-lg"
+              className="mt-6 max-w-2xl text-base text-white/70 sm:text-lg"
             >
               {subtitle}
             </motion.p>

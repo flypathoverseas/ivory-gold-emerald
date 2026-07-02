@@ -39,7 +39,7 @@ function App() {
       <TooltipProvider>
         <BrowserRouter>
           <ScrollToTop />
-          <div className="relative min-h-screen bg-onyx text-cream">
+          <div className="relative min-h-screen bg-onyx text-white">
             <Navbar />
             <main className="pt-24">
               <Routes>

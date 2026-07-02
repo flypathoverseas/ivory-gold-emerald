@@ -45,41 +45,41 @@
 :root {
   --radius: 0.5rem;
 
-  /* Warm amber palette — inspired by the new logo */
-  --onyx: #100A08;               /* deepest warm black */
-  --charcoal: #291710;           /* rich cocoa shadow */
-  --emerald-deep: #37180F;       /* dark amber depth */
+  /* White, orange, and black palette */
+  --onyx: #040404;               /* pure black core */
+  --charcoal: #101010;           /* near-black surface */
+  --emerald-deep: #151515;       /* soft dark background */
   --emerald-base: #EF5128;       /* logo orange primary */
-  --emerald-glow: #FF7C55;       /* bright amber accent */
-  --gold: #F7BE82;               /* soft warm highlight */
-  --gold-soft: #EBA15A;          /* mellow amber accent */
-  --cream: #F8E8DC;              /* warm ivory highlight */
+  --emerald-glow: #FF7C55;       /* warm orange accent */
+  --gold: #EF5128;               /* orange accent */
+  --gold-soft: #FF8D5A;          /* lighter orange accent */
+  --cream: #FFFFFF;              /* pure white text/highlight */
 
-  --background: var(--emerald-deep);
+  --background: var(--onyx);
   --foreground: var(--cream);
-  --card: rgba(239,81,40,0.18);
+  --card: rgba(255,255,255,0.08);
   --card-foreground: var(--cream);
-  --popover: rgba(55,21,12,0.65);
+  --popover: rgba(255,255,255,0.08);
   --popover-foreground: var(--cream);
   --primary: var(--emerald-base);
   --primary-foreground: var(--cream);
   --secondary: var(--charcoal);
   --secondary-foreground: var(--cream);
   --muted: rgba(255,255,255,0.12);
-  --muted-foreground: rgba(255,255,255,0.65);
-  --accent: var(--gold);
-  --accent-foreground: var(--onyx);
-  --destructive: #B23A2F;
+  --muted-foreground: rgba(255,255,255,0.75);
+  --accent: var(--emerald-base);
+  --accent-foreground: var(--cream);
+  --destructive: #C92A1A;
   --destructive-foreground: var(--cream);
-  --border: rgba(247,190,130,0.18);
-  --input: rgba(255,255,255,0.08);
-  --ring: var(--gold);
+  --border: rgba(239,81,40,0.22);
+  --input: rgba(255,255,255,0.06);
+  --ring: var(--emerald-base);
 
-  --gradient-onyx: radial-gradient(circle at top, rgba(239,81,40,0.16) 0%, rgba(16,10,8,0.95) 55%, rgba(8,4,3,1) 100%);
-  --gradient-gold: linear-gradient(135deg, #F7BE82 0%, #EBA15A 100%);
-  --gradient-emerald: linear-gradient(135deg, #EF5128 0%, #37180F 100%);
+  --gradient-onyx: radial-gradient(circle at top, rgba(239,81,40,0.12) 0%, rgba(4,4,4,0.96) 48%, rgba(4,4,4,1) 100%);
+  --gradient-gold: linear-gradient(135deg, #EF5128 0%, #FF8D5A 100%);
+  --gradient-emerald: linear-gradient(135deg, #EF5128 0%, #141414 100%);
 
-  --shadow-gold: 0 16px 60px -28px rgba(212,175,55,0.35);
+  --shadow-gold: 0 16px 60px -28px rgba(239,81,40,0.35);
   --shadow-luxury: 0 40px 100px -30px rgba(0,0,0,0.7);
   --shadow-soft: 0 8px 30px -10px rgba(0,0,0,0.3);
 }
@@ -90,8 +90,8 @@
   body {
     background-color: var(--color-background);
     background-image:
-      radial-gradient(circle at 20% 20%, rgba(255,255,255,0.04) 0%, transparent 18%),
-      linear-gradient(135deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 42px),
+      radial-gradient(circle at top left, rgba(239,81,40,0.08) 0%, transparent 24%),
+      linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0) 100%),
       var(--gradient-onyx);
     background-size: cover;
     background-repeat: no-repeat;
@@ -107,15 +107,18 @@
 @layer utilities {
   .font-display { font-family: var(--font-display); }
   .text-gold { color: var(--gold); }
+  .text-orange { color: var(--gold); }
   .text-cream { color: var(--cream); }
   .text-emerald-glow { color: var(--emerald-glow); }
   .bg-gold { background-color: var(--gold); }
+  .bg-orange { background-color: var(--gold); }
   .bg-onyx { background-color: var(--onyx); }
   .bg-charcoal { background-color: var(--charcoal); }
   .bg-cream { background-color: var(--cream); }
   .bg-emerald-deep { background-color: var(--emerald-deep); }
   .border-gold { border-color: var(--gold); }
-  .border-cream { border-color: var(--cream); }
+  .border-orange { border-color: var(--gold); }
+  .bg-surface { background: rgba(255,255,255,0.08); }
 
   .bg-gradient-onyx { background-image: var(--gradient-onyx); }
   .bg-gradient-gold { background-image: var(--gradient-gold); }
@@ -135,28 +138,28 @@
   }
 
   .glass {
-    background: rgba(15,92,77,0.45);
+    background: rgba(255,255,255,0.06);
     backdrop-filter: blur(24px) saturate(160%);
     -webkit-backdrop-filter: blur(24px) saturate(160%);
-    border: 1px solid rgba(212,175,55,0.12);
+    border: 1px solid rgba(239,81,40,0.18);
   }
   .glass-gold {
-    background: rgba(11,61,53,0.50);
+    background: rgba(239,81,40,0.08);
     backdrop-filter: blur(24px) saturate(160%);
     -webkit-backdrop-filter: blur(24px) saturate(160%);
-    border: 1px solid rgba(212,175,55,0.28);
+    border: 1px solid rgba(239,81,40,0.28);
   }
 
   .btn-emerald {
-    background: var(--emerald-deep);
+    background: var(--emerald-base);
     color: var(--cream);
-    border: 1px solid rgba(212,175,55,0.2);
-    box-shadow: 0 18px 50px -30px rgba(212,175,55,0.35);
+    border: 1px solid rgba(239,81,40,0.28);
+    box-shadow: 0 18px 50px -30px rgba(239,81,40,0.35);
     transition: background-color .25s ease, box-shadow .25s ease, transform .25s ease;
   }
   .btn-emerald:hover {
-    background: var(--emerald-base);
-    box-shadow: 0 18px 70px -28px rgba(212,175,55,0.35);
+    background: var(--gold-soft);
+    box-shadow: 0 18px 70px -28px rgba(239,81,40,0.45);
   }
 
   .shadow-gold { box-shadow: var(--shadow-gold); }
@@ -165,7 +168,7 @@
 
   .gold-glow { transition: box-shadow .4s ease, transform .4s ease; }
   .gold-glow:hover {
-    box-shadow: 0 0 0 1px var(--gold), 0 24px 70px -20px rgba(212,175,55,0.45);
+    box-shadow: 0 0 0 1px var(--gold), 0 24px 70px -20px rgba(239,81,40,0.45);
   }
 
   .ken-burns { animation: kenBurns 22s ease-in-out infinite alternate; }

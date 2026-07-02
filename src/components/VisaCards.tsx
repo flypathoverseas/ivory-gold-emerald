@@ -47,7 +47,7 @@ export function VisaCards({ heading = true }: { heading?: boolean }) {
   return (
     <section id="visas" className="relative overflow-hidden bg-onyx py-28">
       <div className="pointer-events-none absolute inset-x-0 top-0 divider-gold" />
-      <div className="pointer-events-none absolute -top-32 right-0 h-[500px] w-[500px] rounded-full bg-emerald-deep/20 blur-3xl" />
+      <div className="pointer-events-none absolute -top-32 right-0 h-[500px] w-[500px] rounded-full bg-gold/20 blur-3xl" />
 
       <div className="mx-auto max-w-7xl px-6">
         {heading && (
@@ -60,10 +60,10 @@ export function VisaCards({ heading = true }: { heading?: boolean }) {
             >
               <span className="h-1 w-1 rounded-full bg-gold" /> Three Pathways
             </motion.div>
-            <h2 className="font-display text-4xl text-cream sm:text-5xl">
+            <h2 className="font-display text-4xl text-white sm:text-5xl">
               Choose Your <span className="italic text-gradient-gold">Journey</span>
             </h2>
-            <p className="mx-auto mt-5 max-w-xl text-cream/65">
+            <p className="mx-auto mt-5 max-w-xl text-white/65">
               A boutique selection of programs — each curated, vetted, and supported by
               senior immigration advisors.
             </p>
@@ -100,8 +100,8 @@ function VisaCard({ item }: { item: Item }) {
     <Link
       to={item.to}
       className={`group relative block h-full overflow-hidden rounded-3xl border ${
-        highlight ? "border-gold/40" : "border-cream/10"
-      } bg-charcoal shadow-luxury transition-transform duration-500 hover:-translate-y-1`}
+        highlight ? "border-gold/40" : "border-white/10"
+      } bg-onyx/90 shadow-luxury transition-transform duration-500 hover:-translate-y-1`}
     >
       <div className={`relative ${highlight ? "h-[560px]" : "h-[420px]"} overflow-hidden`}>
         <img
@@ -131,22 +131,13 @@ function VisaCard({ item }: { item: Item }) {
           </span>
           <span className="text-[10px] uppercase tracking-[0.28em] text-gold">{item.label}</span>
         </div>
-        <h3 className={`mt-4 font-display ${highlight ? "text-4xl sm:text-5xl" : "text-2xl sm:text-3xl"} text-cream`}>
-          {item.title}
-        </h3>
-        <p className={`mt-3 ${highlight ? "max-w-md text-base" : "text-sm"} text-cream/70`}>
-          {item.desc}
-        </p>
-
-        <div className="mt-6 flex items-center gap-2 text-sm font-medium text-gold">
-          Explore
-          <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-        </div>
-
-        {highlight && (
+          <h3 className={`mt-4 font-display ${highlight ? "text-4xl sm:text-5xl" : "text-2xl sm:text-3xl"} text-white`}>
+            {item.title}
+          </h3>
+          <p className={`mt-3 ${highlight ? "max-w-md text-base" : "text-sm"} text-white/70`}>
           <div className="mt-6 flex flex-wrap gap-2">
             {["Canada", "UK", "UAE", "Europe", "Australia"].map((c) => (
-              <span key={c} className="rounded-full border border-gold/25 bg-onyx/40 px-3 py-1 text-[10px] uppercase tracking-widest text-cream/70 backdrop-blur">
+              <span key={c} className="rounded-full border border-gold/25 bg-onyx/40 px-3 py-1 text-[10px] uppercase tracking-widest text-white/70 backdrop-blur">
                 {c}
               </span>
             ))}

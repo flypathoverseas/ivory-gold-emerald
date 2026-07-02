@@ -38,25 +38,25 @@ export default function StudentVisaPage() {
             { Icon: Award, t: "Scholarship Strategy" },
             { Icon: Users, t: "Post-Study Work" },
           ].map(({ Icon, t }, i) => (
-            <motion.div key={t} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.06 }} className="rounded-2xl border border-cream/10 bg-charcoal/60 p-6">
+            <motion.div key={t} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.06 }} className="rounded-2xl border border-white/10 bg-onyx/60 p-6">
               <Icon className="h-6 w-6 text-gold" strokeWidth={1.5} />
-              <div className="mt-4 font-display text-xl text-cream">{t}</div>
+              <div className="mt-4 font-display text-xl text-white">{t}</div>
             </motion.div>
           ))}
         </div>
       </section>
 
-      <section className="bg-charcoal py-24">
+      <section className="bg-onyx py-24">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-12 max-w-2xl">
             <span className="text-[10px] uppercase tracking-[0.3em] text-gold">Featured Destinations</span>
-            <h2 className="mt-3 font-display text-4xl text-cream sm:text-5xl">University <span className="italic text-gradient-gold">Pathways</span></h2>
+            <h2 className="mt-3 font-display text-4xl text-white sm:text-5xl">University <span className="italic text-gradient-gold">Pathways</span></h2>
           </div>
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {universities.map((u, i) => (
-              <motion.div key={u.country} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }} className="group rounded-2xl border border-cream/10 bg-onyx/60 p-7 transition-all hover:border-gold/40">
+              <motion.div key={u.country} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }} className="group rounded-2xl border border-white/10 bg-onyx/60 p-7 transition-all hover:border-gold/40">
                 <div className="text-[10px] uppercase tracking-[0.25em] text-gold">{u.country}</div>
-                <div className="mt-3 font-display text-2xl text-cream">{u.picks}</div>
+                <div className="mt-3 font-display text-2xl text-white">{u.picks}</div>
               </motion.div>
             ))}
           </div>
