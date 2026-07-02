@@ -135,6 +135,8 @@ function VisaCard({ item }: { item: Item }) {
             {item.title}
           </h3>
           <p className={`mt-3 ${highlight ? "max-w-md text-base" : "text-sm"} text-white/70`}>
+            {item.desc}
+          </p>
           <div className="mt-6 flex flex-wrap gap-2">
             {["Canada", "UK", "UAE", "Europe", "Australia"].map((c) => (
               <span key={c} className="rounded-full border border-gold/25 bg-onyx/40 px-3 py-1 text-[10px] uppercase tracking-widest text-white/70 backdrop-blur">
@@ -142,14 +144,8 @@ function VisaCard({ item }: { item: Item }) {
               </span>
             ))}
           </div>
-        )}
-      </div>
-
-      {highlight && (
-        <div className="absolute right-5 top-5 rounded-full bg-gradient-gold px-3 py-1 text-[9px] font-semibold uppercase tracking-[0.25em] text-onyx shadow-gold">
-          Flagship
         </div>
-      )}
-    </Link>
-  );
-}
+      </Link>
+    );
+  }
+
