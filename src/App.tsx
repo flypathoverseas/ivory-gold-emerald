@@ -20,7 +20,7 @@ import TouristVisa from "@/pages/tourist-visa";
 import WorkVisa from "@/pages/work-visa";
 
 const queryClient = new QueryClient();
-const logoPreloadHref = new URL("./assets/logo.png", import.meta.url).href;
+const logoPreloadHref = new URL("./assets/Final-FP-Travel-Path-Logo.png", import.meta.url).href;
 
 function App() {
   useEffect(() => {

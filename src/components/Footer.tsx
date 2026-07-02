@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Globe, Send, AtSign, MapPin, Phone } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/Final-FP-Travel-Path-Logo.png";
 
 export function Footer() {
   return (

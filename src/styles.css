@@ -45,21 +45,21 @@
 :root {
   --radius: 0.5rem;
 
-  /* Luxury dark palette — inspired by Emirates / Rolex */
-  --onyx: #081A16;               /* deepest emerald-black */
-  --charcoal: #0C332B;           /* dark forest shadow */
-  --emerald-deep: #0B3D35;       /* luxury emerald depth */
-  --emerald-base: #0F5C4D;       /* primary emerald tone */
-  --emerald-glow: #11A07A;       /* subtle emerald accent */
-  --gold: #D4AF37;               /* metallic gold */
-  --gold-soft: #C9A227;          /* warm gold accent */
-  --cream: #F2E6C8;              /* creamy warm highlight */
+  /* Warm amber palette — inspired by the new logo */
+  --onyx: #100A08;               /* deepest warm black */
+  --charcoal: #291710;           /* rich cocoa shadow */
+  --emerald-deep: #37180F;       /* dark amber depth */
+  --emerald-base: #EF5128;       /* logo orange primary */
+  --emerald-glow: #FF7C55;       /* bright amber accent */
+  --gold: #F7BE82;               /* soft warm highlight */
+  --gold-soft: #EBA15A;          /* mellow amber accent */
+  --cream: #F8E8DC;              /* warm ivory highlight */
 
   --background: var(--emerald-deep);
   --foreground: var(--cream);
-  --card: rgba(15,92,77,0.28);
+  --card: rgba(239,81,40,0.18);
   --card-foreground: var(--cream);
-  --popover: rgba(11,61,53,0.55);
+  --popover: rgba(55,21,12,0.65);
   --popover-foreground: var(--cream);
   --primary: var(--emerald-base);
   --primary-foreground: var(--cream);
@@ -68,16 +68,16 @@
   --muted: rgba(255,255,255,0.12);
   --muted-foreground: rgba(255,255,255,0.65);
   --accent: var(--gold);
-  --accent-foreground: var(--emerald-deep);
+  --accent-foreground: var(--onyx);
   --destructive: #B23A2F;
   --destructive-foreground: var(--cream);
-  --border: rgba(212,175,55,0.16);
+  --border: rgba(247,190,130,0.18);
   --input: rgba(255,255,255,0.08);
   --ring: var(--gold);
 
-  --gradient-onyx: radial-gradient(circle at top, rgba(15,92,77,0.9) 0%, rgba(8,26,22,0.95) 55%, rgba(5,19,15,1) 100%);
-  --gradient-gold: linear-gradient(135deg, #E4C76A 0%, #C9A227 100%);
-  --gradient-emerald: linear-gradient(135deg, #0F5C4D 0%, #0B3D35 100%);
+  --gradient-onyx: radial-gradient(circle at top, rgba(239,81,40,0.16) 0%, rgba(16,10,8,0.95) 55%, rgba(8,4,3,1) 100%);
+  --gradient-gold: linear-gradient(135deg, #F7BE82 0%, #EBA15A 100%);
+  --gradient-emerald: linear-gradient(135deg, #EF5128 0%, #37180F 100%);
 
   --shadow-gold: 0 16px 60px -28px rgba(212,175,55,0.35);
   --shadow-luxury: 0 40px 100px -30px rgba(0,0,0,0.7);
